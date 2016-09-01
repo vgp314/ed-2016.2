@@ -4,6 +4,7 @@ CONTEÚDO DESSE ARQUIVO
  * Introdução
  * XML
  * Recomedações
+ * Guidelines para padronização na elaboração de questões
 
 INTRODUÇÃO
 ----------
@@ -53,3 +54,8 @@ Um esquema será futuramente definido para validações dos arquivos xml, a fim 
  * O atributo correct de option é obrigatório e deve se restringir aos valores 'correct' e 'incorrect'.
  
  * Para a criação das questões e respostas deve seguir as sugestões do GOAL.
+ 
+ GUIDELINES
+-------------
+
+Verificar arquivo guidelines.txt
