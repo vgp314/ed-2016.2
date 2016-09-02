@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="Azul-q1" level="1" subject="teoremamestre">
+	<text>
+       <p> Considerando a seguinte recorrência em função de a e b:<br/>
+	$- T(n) = aT(n/b) + n^(2)$<br/>
+	Identifique a instância correta para essa recorrência dentre as opções:</p>
+	</text>
+    <explanation>
+		   Uma breve explicação sobre o teorema mestre pode ser encontrada em: 
+		   <a href="https://math.dartmouth.edu/archive/m19w03/public_html/Section5-2.pdf">Teorema Mestre</a>
+    </explanation>
+	<choice type="incorrect">
+		<text>Se $a=b$, então $T(n)=O(n\log{}n)$ </text>
+		<explanation>
+			Se $a=b$, $log{b}a=1$, então o algoritmo possui complexidade de ordem $n^2$.
+		</explanation>
+	</choice>
+	<choice type="correct">
+		<text>Se $a=b^(2) então $T(n)=O(n^(2)*log{}n)$ </text>
+		<explanation>
+			Se $a=b^(2)$, $log{b}a=2$, então o algoritmo possui complexidade $n^(2)*log{}n$.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Se $a=3$ e $b=27$, então $T(n)=O(n^(2))$</text>
+		<explanation>
+			Se $a=3$ e $b=27$, $log{b}a=3$ então o algoritmo possui complexidade de ordem $n^(3)$. 
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Se $a=b$, então $T(n)=O(1)$</text>
+		<explanation>
+			Se $a=b$, $log{b}a=1$, então o algoritmo possui complexidade de ordem $n^2$.
+		</explanation>
+	</choice>
+</question>
