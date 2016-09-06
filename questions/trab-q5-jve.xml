@@ -4,8 +4,9 @@
 		<p>
 			Um algoritmo guloso é uma técnica de resolução de problemas de otimização. 
 			Segue abaixo um exemplo de algoritmo que soluciona o problema da <a href="https://en.wikipedia.org/wiki/Continuous_knapsack_problem">
-			mochila fracionário</a>. Qual opção abaixo é correta?
+			mochila fracionária</a>. Qual opção abaixo é correta?
 		</p>
+	</text>
 <pre><code>Mochila-Fracionária (p, v, n, c)
    j ← n
    enquanto  j ≥ 1  e  pj ≤ c  faça
