@@ -3,7 +3,7 @@
 	<text>
        <p>O problema do troco pode ser definido da seguinte maneira: <i> Dado um sistema monetário de moedas de 
 		valores $X1, X2, ..., Xn$, deseja-se produzir um troco de total $N$ com o menor número de moedas possíveis.</i> </p>
-		<p>Para as alternativas abaixo, determind qual é correta.</p>
+		<p>Para as alternativas abaixo, determine qual é correta.</p>
 		 <i>
 		   Uma breve explicação sobre o problema pode ser enontrada no seguinte link:
 		   <a href="https://pt.wikipedia.org/wiki/O_Problema_do_Troco_de_Frobenius">O Problema do Troco de Frobenius</a>
