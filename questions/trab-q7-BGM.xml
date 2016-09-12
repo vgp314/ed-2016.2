@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="1" level="1" subject="Programação dinâmica">
+  <text>
+    <p>Uma subsequência contígua de uma lista S é uma subsequência que contém números consecutivos de S. Um problema envolvendo subsequências contíguas é o de achar a subsequência com a maior soma. Esse problema pode ser resolvido com programação dinâmica, existindo diversos algoritmos que realizam essa tarefa. Implemente um algoritmo com complexidade O(n) e ache a maior soma de uma subsequência contíguo da seguinte lista:</p>
+	
+	$$ [-8, -9, 3, 7, 8, 2, -6, 0, -4, 3, 7, 1, -4, -2, 5, -8, 4, -5, 4, -2, -10, 2, -10, 6, -2, -8, 1, -8, -1, -4, 7, 5, -5, 0, 6, -6, -6, -6, -7, -10, 0, 6, 1, 9, 9, 1, 9, 7, 6, -2]. $$
+		
+  </text>
+  <explanation>
+    <i>Um exemplo de maior soma seria a subsequência {4,-1,2,1} da sequência  {-2,1,-3,4,-1,2,1,-5,4}.
+</i>
+  </explanation>
+  <choice type="correct">
+    <text><b>48</b></text>
+    <explanation>
+    
+    </explanation>
+  </choice>
+  <choice type="incorrect">
+    <text>119</text>
+    <explanation>
+      Uma sequência contígua é feita de números consecutivos da lista inicial. 
+    </explanation>
+  </choice>
+  <choice type="incorrect">
+    <text>-14</text>
+    <explanation>
+      Ache a soma de uma subsequência contígua, não a soma da sequência inteira.
+    </explanation>
+  </choice>
+  <choice type="incorrect">
+    <text>20</text>
+    <explanation>
+      A maior subsequência contígua não é a que tem os primeiros termos positivos.
+    </explanation>
+  </choice>
+  <choice type="incorrect">
+    <text>57</text>
+    <explanation>
+	O valor da soma contígua está errado.
+    </explanation>
+  </choice>
+  <choice type="incorrect">
+    <text>46</text>
+    <explanation>
+	Não é necessário chegar até o final da lista.
+  </choice>
+  <choice type="correct">
+    <text>21</text>
+    <explanation>
+	Há outra subsquência contígua maior que essa.			
+    </explanation>
+  </choice>
+</question>
