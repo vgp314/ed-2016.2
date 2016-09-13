@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<question id="VDF-q2" level="1" capitulo="3">
+  <text>
+    <p>Considere as seguintes definições sobre árvore binária em fila de prioridade:</p>
+    <ul>
+      <li>Forma da estrutura: relativo à disposição dos elementos, independentemente do valor dos mesmos;</li>
+      <li>Estabilidade da estrutura: relativo ao valor dos elementos, independentemente da forma;</li>
+      <li>Balanceamento: ato de organizar a estrutura para atingir estabilidade de forma;</li>
+      <li>Estabilização: ato de organizar os elementos da estrutura para atingir conformidade com a regra de organização;</li>
+    </ul>
+    <p>É correto afirmar sobre fila de prioridade implementada por árvore binária balanceada (<i>heap</i>):</p>
+  </text>
+
+  <explanation>
+    
+  </explanation>
+  
+  <choice type="incorrect">
+    <text>
+      A regra de ordem da árvore binária de uma fila de prioridade impõe restrição (<i>constraint</i>) entre pais e filhos e entre irmãos.
+    </text>
+    <explanation>
+      A relação entre irmãos é irrelevante.
+    </explanation>
+  </choice>
+
+  <choice type="correct">
+    <text>
+      O número de níveis da árvore binária é aproximadamente log2(n), sendo n o número de elementos.
+    </text>
+    <explanation>
+      Cada nível i possui 2^(i-1) elementos.
+      Cada nível i completo totaliza 2^i - 1 elementos na fila.
+      Logo o número de níveis é log2(2^i) = log2(n+1), ou seja i = log2(n+1), para i completo.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      A árvore binária de uma fila de prioridade pressupõe implementação de elementos encadeados estruturado em árvore (duas ligações ou ponteiros por elemento).
+    </text>
+    <explanation>
+      A estrutura balanceada da árvore binária da fila de prioridade permite que seus elementos sejam estruturados por meio de simples lista encadeada ou por vetores unidimensionais.
+    </explanation>
+  </choice>
+  
+  <choice type="correct">
+    <text>
+      A remocação do elemento prioritário da fila possui <b>custo máximo</b> 1.
+    </text>
+    <explanation>
+      Em sua forma balaceada e estável, o elemento prioritário é posicionado na primeira posição da fila, a qual é conhecida <i>ex ante</i>.
+      Consequentemente, sua remoção tem custo máximo 1 em algoritmo ótimo.
+    </explanation>
+  </choice>
+  
+  <choice type="correct">
+    <text>
+      Após a remoção do elemento prioritário, a estrutura remanescente da árvore permanesce estável.
+    </text>
+    <explanation>
+      A retirada do elemento prioritário não altera a estabilidade da forma, apenas seu balanceamento.
+    </explanation>
+  </choice>
+  
+  <choice type="incorrect">
+    <text>
+      Após a remoção do elemento prioritário, a estrutura remanescente da árvore permanece balanceada.
+    </text>
+    <explanation>
+      A  retirada do elemento prioritário torna órfãos os filhos imediatos destes.
+      Consequentemente, havendo dois ou mais elementos na estrutura, a remoção do elemnto prioritário resultará em desbalanceamento.
+    </explanation>
+  </choice>
+  
+  <choice type="incorrect">
+    <text>
+      Após a remoção do elemento prioritário, a estutura remanescente da árvore tornar-se-á desbalanceada.
+    </text>
+    <explanation>
+      A remoção do elemento prioritário resulta em desbalanceamento da estrutura em caso de a árvore remanescente não vazia.
+      Em caso de árvore vazia, não há que se falar em desbalanceamento.
+    </explanation>
+  </choice>
+  
+  <choice type="incorrect">
+    <text>
+      Em árvore com dois ou mais níveis, o rebalanceamento da árvore torna a estrutura instável.
+    </text>
+    <explanation>
+      O balanceamento da árvore na fila de prioridade se faz pela promoção do último elemento à raiz.
+      Em árvore com dois níveis (isto é, dois ou três elementos antes da remoção do elemento prioritário),
+        é possível que o balenceamento não resulte em estrutura instável, pois não há restrição quanto à relação entre irmãos.
+    </explanation>
+  </choice>
+    
+  <choice type="correct">
+    <text>
+      Em árvore com três ou mais níveis, o rebalanceamento da árvore torna a estrutura instável.
+    </text>
+    <explanation>
+      O balanceamento da árvore na fila de prioridade se faz pela promoção do último elemento à raiz.
+      Consequentemente, entre os descententes destes haverá pelo menos um elemento que tenha sido seu ascendente.
+    </explanation>
+  </choice>
+  
+  <choice type="incorrect">
+    <text>
+      A remoção do elemento prioritário impõe um custo máximo de balanceamento de aproximadamente log(n).
+    </text>
+    <explanation>
+      O custo de balanceamento da estrutura é 1, correspondente à promoção do último elemento à raiz.
+    </explanation>
+  </choice>
+
+  <choice type="correct">
+    <text>
+      A remoção do elemento prioritário impõe um custo máximo de estabilização de aproximadamente log(n)
+    </text>
+    <explanation>
+      O custo máximo de estabilização corresponde ao máximo possível de permutas pai/filho, que corresponde ao número de níveis da estrutura.
+    </explanation>
+  </choice>
+    
+  <choice type="correct">
+    <text>
+      A inserção de novo elemento na fila possui <b>custo máximo</b> 1.
+    </text>
+    <explanation>
+      O novo elemento é necessáriamente inserido na última posição da fila, a qual é conhecida <i>ex ante</i>.
+      Consequentemente, sua inclusão tem custo máximo 1 em algoritmo ótimo.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      A inclusão de um novo elemento na fila possui <b>custo máximo</b> log(n) para presevar o balanceamento (isto é, para encontrar a posição de inserção, desconsiderado o custo de estabilização).
+    </text>
+    <explanation>
+      O novo elemento é inserido na última posição da fila, a qual é conhecida <i>ex ante</i>.
+      Consequentemente, o "custo máximo" será 1.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      A inclusão de um novo elemento na fila possui <b>custo mínimo</b> 1 para preservar o balanceamento (isto é, para encontrar a posição de inserção, desconsiderado o custo de estabilização).
+    </text>
+    <explanation>
+      O custo de inserção é 1, já que a posição de inserção é conhecida <i>ex ante</i>.
+    </explanation>
+  </choice>
+
+  <choice type="correct">
+    <text>
+      A inclusão de um novo elemento em fila NÃO vazia NÃO torna a estrutura desbalanceada.
+    </text>
+    <explnation>
+      Insere-se o elemento na última posição da fila.
+    </explnation>
+  </choice>
+      
+  <choice type="incorrect">
+    <text>
+      A inclusão de um novo elemento em fila NÃO vazia torna a estrutura instável.
+    </text>
+    <explanation>
+      A inclusão de um novo elemento na filta tornará a estrutura instável se seu valor violar a regra de ordem, isto é, em relação ao seu pai.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      O custo máximo de estabilização da arvore binária após a inclusão de um novo elemento é n.
+    </text>
+    <explanation>
+      O custo máximo de estabilização corresponde ao máximo possível de permutas pai/filho, que corresponde ao número de níveis da estrutura.
+    </explanation>
+  </choice>
+
+</question>
