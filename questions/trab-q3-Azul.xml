@@ -6,7 +6,7 @@
 		<p>
 			Quais das alfirmações abaixo estão corretas a respeito da árvore resultante da aplicação do algoritmo de Kruskal no grafo abaixo?
 		</p>
-		<img src="img/grafo.png"/> <br/>
+		<img src="images/grafo.png"/> <br/>
 	<explanation>
 		Uma breve explicação sobre o algoritmo pode ser encontrada em: 
 		   <a href="http://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/kruskal.html">Algoritmo de Kruskal</a>

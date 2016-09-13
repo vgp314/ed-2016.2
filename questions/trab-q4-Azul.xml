@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <question id="Azul-q4" level="1" subject="Complexidade">
 	<text>
-		<p>Determine a complexidade do algoritmo de busca em pseudocódigo abaixo segunda a notação O em função do número de elementos do vetor ordenado onde está sendo realizada a busca:</p><br/>
+		<p>Determine a complexidade do algoritmo de busca em pseudocódigo abaixo segunda a notação O em função do número de elementos do vetor ordenado onde está sendo realizada a busca:</p>
 <pre><code>
 busca(A:vetor ordenado, n:inteiro, m:inteiro)
 	p?0
@@ -18,31 +18,31 @@ busca(A:vetor ordenado, n:inteiro, m:inteiro)
 		<text> $O(n)$ 
 		</text>
 		<explanation>
-			O algoritmo é $O(log{2}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.
+			O algoritmo é $O(log{}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.
 		</explanation>
 	</choice>
 	<choice type="correct">
 		<text>$O(log{}n$</text>
 		<explanation>
-		O algoritmo é $O(log{2}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.	
+		O algoritmo é $O(log{}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.	
 		</explanation>
 	</choice>
 	<choice type="incorrect">
 		<text>$n^(2))$</text>
 		<explanation>
-		O algoritmo é $O(log{2}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.	
+		O algoritmo é $O(log{}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.	
 		</explanation>
 	</choice>
 	<choice type="incorrect">
 		<text>$T(n*log{}n)$</text>
 		<explanation>
-		O algoritmo é $O(log{2}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.	
+		O algoritmo é $O(log{}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.	
 		</explanation>
 	</choice>
 	<choice type="incorrect">
 		<text>Nenhuma das opções acima.	</text>
 		<explanation>
-		O algoritmo é $O(log{2}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.	
+		O algoritmo é $O(log{}n)$, pois cada comparação reduz o número de possíveis candidatos por um fator de 2.	
 		</explanation>
 	</choice>
 </question>

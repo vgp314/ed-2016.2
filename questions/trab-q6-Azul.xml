@@ -4,7 +4,7 @@
 		<p>
 		Assinale a alternativa que indica quantos nós possui o maior componente fortemente conexo do grafo abaixo.
 		</p>
-		<img src="img/graph_SCC.png"/> <br/>
+		<img src="images/graph_SCC.png"/> <br/>
 	<explanation>
 		Uma breve explicação sobre o algoritmo pode ser encontrada em: 
 		   <a href="http://www.columbia.edu/~cs2035/courses/csor4231.F11/scc.pdf">Componentes Fortemente Conexos</a>

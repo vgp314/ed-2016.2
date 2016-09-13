@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <question id="Azul-q1" level="1" subject="teoremamestre">
 	<text>
-       <p> Considerando a seguinte recorrência em função de a e b:<br/>
+       <p> Considerando a seguinte recorr&ecirc;ncia em função de a e b:<br/>
 	$- T(n) = aT(n/b) + n^(2)$<br/>
 	Identifique a instância correta para essa recorrência dentre as opções:</p>
 	</text>
