@@ -19,16 +19,16 @@
          xi ← 0
    devolva  x
 </code></pre>
-		<i>
-			<ul>
-				<li>- $n$ é o número de objetos</li>
-				<li>- cada objeto $i$ tem peso $pi$ e valor específico $vi$</li>
-				<li>- $c$ é a capacidade da mochila e deve ser respeitada</li>
-                <li>- $xi$ é o número de objetos selecionados de indíce $i$</li>
-                <li>- deseja-se preencher a mochila com o maior valor possível</li>
-                <li>- supor que os objetos já se encontram ordenados de forma decrescente em relação a $vi$</li>
-			</ul>
-		</i>
+<i>
+  <ul>
+    <li>$n$ é o número de objetos</li>
+    <li>cada objeto $i$ tem peso $pi$ e valor específico $vi$</li>
+    <li>$c$ é a capacidade da mochila e deve ser respeitada</li>
+    <li>$xi$ é o número de objetos selecionados de indíce $i$</li>
+    <li>deseja-se preencher a mochila com o maior valor possível</li>
+    <li>supor que os objetos já se encontram ordenados de forma decrescente em relação a $vi$</li>
+  </ul>
+</i>
 	<choice type="incorrect">
 		<text>O algoritmo é eficiente pois realiza retornos (Backtrackings) para otimização </text>
 		<explanation>

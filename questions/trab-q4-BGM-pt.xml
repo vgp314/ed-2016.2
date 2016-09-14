@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <question id="BGM-q4" level="1" chapter="2">
 
 	<text>
-       <p>Algoritmos que utilizam a estratégia de divisão e conquista, ou do inglês "Divide and Conquer", tem um padrão geral de resolver de forma recursiva um problema de tamanho <i>n</i> através da resolução de <i>a</i> subproblemas de tamanho <i>n/b</i> e combinar essas respostas em um tempo \( O(n^d) \), para a,b,d > 0. Esse padrão de solução recursiva utiliza um teorema fundamental conhecido como Master Theorem, que diz que para um <i>n</i> grande temos: \( T(n) \le aT(n/b) + O(n^d) \). Considerando o problema de busca binária, que consiste em encontrar uma chave K em um conjunto de chaves ordenadas z[0,1,...,n-1]. Nesse problema, nós comparamos K com z[n/2] e dependendo do resultado, iteramos recursivamente na primeira ou na segunda metade do conjunto de chaves ordenadas. Podemos indicar os seguintes valores para as variáveis, citadas anteriormente e o respectivo de tempo de processamento, baseado no tamanho <i>n</i> do conjunto:</p>
+       <p>Algoritmos que utilizam a estratégia de divisão e conquista, ou do inglês "Divide and Conquer", tem um padrão geral de resolver de forma recursiva um problema de tamanho <i>n</i> através da resolução de <i>a</i> subproblemas de tamanho <i>n/b</i> e combinar essas respostas em um tempo \( O(n^d) \), para a,b,d > 0. Esse padrão de solução recursiva utiliza um teorema fundamental conhecido como Master Theorem, que diz que para um <i>n</i> grande temos: $T(n) \le aT(n/b) + O(n^d)$. Considerando o problema de busca binária, que consiste em encontrar uma chave K em um conjunto de chaves ordenadas z[0,1,...,n-1]. Nesse problema, nós comparamos K com z[n/2] e dependendo do resultado, iteramos recursivamente na primeira ou na segunda metade do conjunto de chaves ordenadas. Podemos indicar os seguintes valores para as variáveis, citadas anteriormente e o respectivo de tempo de processamento, baseado no tamanho <i>n</i> do conjunto:</p>
   </text>
 
     <explanation>

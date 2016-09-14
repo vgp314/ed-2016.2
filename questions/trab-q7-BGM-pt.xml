@@ -3,11 +3,12 @@
   <text>
     <p>Uma subsequência contígua de uma lista S é uma subsequência que contém números consecutivos de S. Um problema envolvendo subsequências contíguas é o de achar a subsequência com a maior soma. Esse problema pode ser resolvido com programação dinâmica, existindo diversos algoritmos que realizam essa tarefa. Implemente um algoritmo com complexidade O(n) e ache a maior soma de uma subsequência contíguo da seguinte lista:</p>
 	
-	$$ [-8, -9, 3, 7, 8, 2, -6, 0, -4, 3, 7, 1, -4, -2, 5, -8, 4, -5, 4, -2, -10, 2, -10, 6, -2, -8, 1, -8, -1, -4, 7, 5, -5, 0, 6, -6, -6, -6, -7, -10, 0, 6, 1, 9, 9, 1, 9, 7, 6, -2]. $$
+$$ [-8, -9, 3, 7, 8, 2, -6, 0, -4, 3, 7, 1, -4, -2, 5, -8, 4, -5, 4, -2, -10, 2, -10, 6, -2, -8, 1, -8, -1, -4, 7, 5, -5, 0, 6, -6, -6, -6, -7, -10, 0, 6, 1, 9, 9, 1, 9, 7, 6, -2]. $$
 		
   </text>
   <explanation>
-    <i>Um exemplo de maior soma seria a subsequência {4,-1,2,1} da sequência  {-2,1,-3,4,-1,2,1,-5,4}.</i>
+    <i>Um exemplo de maior soma seria a subsequência {4,-1,2,1} da
+    sequência {-2,1,-3,4,-1,2,1,-5,4}.</i>
   </explanation>
   <choice type="correct">
     <text>48</text>

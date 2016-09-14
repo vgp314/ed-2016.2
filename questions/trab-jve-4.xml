@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <question id="1" level="2" subject="grafo">
-	<text>
-		<p>
-			O BFS é um agoritmo de busca em grafo. Utilizando esse algoritmo, uma ordem possível de vértices visitados é:
-		</p><br/>
-		<img src="images/graph02.gif"/><br/>
-	</text>
-	<explanation>
-        <i>
-            BFS: Breadth First Search - <a href="https://pt.wikipedia.org/wiki/Busca_em_largura">Link para mais informações</a> 
-        </i>
+  <text>
+    <p>
+      O BFS é um agoritmo de busca em grafo. Utilizando esse
+      algoritmo, uma ordem possível de vértices visitados é: </p><br/>
+      <img src="images/trab-jve-4.gif"/><br/>
+  </text>
+  <explanation>
+    <p>
+      BFS: Breadth First Search - <a
+      href="https://pt.wikipedia.org/wiki/Busca_em_largura">Link para
+      mais informações</a>
+    </p>
 	</explanation>
 	<choice type="incorrect">
 		<text>M - N - O - P - Q - R</text>
 		<explanation>
-			Essa sequência não corresponde a uma sequência possível no BFS. Corresponde na verdade
-            a uma sequência possível no DFS.
+			Essa sequência não corresponde a uma sequência
+			possível no BFS. Corresponde na verdade a uma
+			sequência possível no DFS.
 		</explanation>
 	</choice>
 	<choice type="incorrect">

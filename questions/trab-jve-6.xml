@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <question level="3" chapter="6">
-	<text>
-       <p>O problema do troco pode ser definido da seguinte maneira: <i> Dado um sistema monetário de moedas de 
+  <text>
+    <p>O problema do troco pode ser definido da seguinte maneira: <i> Dado um sistema monetário de moedas de 
 		valores $X1, X2, ..., Xn$, deseja-se produzir um troco de total $N$ com o menor número de moedas possíveis.</i> </p>
 		<p>Para as alternativas abaixo, determine qual é correta.</p>
 		 <i>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <question id="BGM-q9" level="3" chapter="8">
 
     <text>
@@ -15,7 +15,7 @@
     <explanation>
         <i>
 	<p>NP-Complete: I, III, V</p>
-	<p>          P: II, IV, VI</p>
+	<p>P: II, IV, VI</p>
 	</i>
     </explanation>
 
