@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="Azul-q2" level="1" subject="DFS">
+	<text>
+		<p>Realize o algoritmo DFS no grafo direcionado abaixo. Sempre que houver mais de uma opção de qual nó visitar primeiro, escolha o nó com o menor indice. <br/></p>
+		<img src="images/graph.png"/> <br/>
+		<p>Identifique o número a opção que apresenta o número de pre-ordem correto nas opções abaixo: 	</p>
+	</text>
+	<explanation>
+	Uma breve explicação do DFS pode ser encontrada em:
+	<a href="http://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/dfs1.html">DFS</a>
+	</explanation>
+	<choice type="correct">
+		<text> O número de pré-ordem do vértice de indice 5 é 11. 
+		</text>
+		<explanation>
+			
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>O número de pré-ordem do vértice de indice 1 é 0.</text>
+		<explanation>
+			
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>O número de pré-ordem do vértice de indice 5 é 10.</text>
+		<explanation>
+			
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>O número de pré-ordem do vértice de indice 1 é 2.</text>
+		<explanation>
+			
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>O número de pré-ordem do vértice de indice 4 é 5.	</text>
+		<explanation>
+			
+		</explanation>
+	</choice>
+</question>

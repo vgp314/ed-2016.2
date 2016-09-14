@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="Azul-q7" level="2" subject="Fila de prioridades">
+	<text>
+		<p>
+		A fila de prioridades é uma estrutura de dados muito utilizada para implementar algoritmos. Como exemplo disso temos o algoritmo de Dijkstra que utiliza a mesma na sua implementação.
+		Sendo assim, assinale as alternativas corretas a respeito da fila de prioridades.
+		</p>
+	<explanation>
+		Uma breve explicação sobre fila de prioridades pode ser encontrada em:
+		<a href="http://www.ime.usp.br/~song/mac5710/slides/03prior.pdf">Fila de prioridades</a>
+	</explanation>
+	</text>
+	<choice type="correct">
+		<text>É possivel ordenar os elementos de uma fila de prioridades utilizando um algoritmo que retira a raiz sucessivamente com complexidade $O(n*log{}n)$. </text>
+		<explanation>
+			Como o elemento da raiz é sempre o de maior prioridade o algoritmo está correto. Para verificar a complexidade basta notar que a cada retirada da raiz, deve-se escolher uma nova raiz o que leva $O(log{}n)$ e como serão feitas $n$ retiradas o algoritmo possui complexidade $O(n*log{}n)$
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Os dois maiores elementos de um heap são sempre folhas.</text>
+		<explanation>
+			É possível que o segundo maior elemento do heap seja pai do maior e logo não seja uma folha.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>É impossível que ao se analisar dois elementos de uma fila de prioridades o de maior prioridade esteja em um nível mais baixo.</text>
+		<explanation>
+			É possivel, basta que o de maior prioridade não seja um descendente do de menor prioridade.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>O algoritmo de construir uma fila de prioridades com n elementos tem complexidade de no mínimo $O(n*log{}n)$</text>
+		<explanation>
+			É possível construir uma fila de prioridades em tempo linear.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Em uma fila de prioridades n-aria, isto é com n filhos por pai, a remoção do menor elemento ocorre de maneira mais rápida.</text>
+		<explanation>
+			Em uma fila de prioridades n-aria a remoção é feita de maneira mais lenta e a inserção de maneira mais rápida.	
+		</explanation>
+	</choice>
+</question>

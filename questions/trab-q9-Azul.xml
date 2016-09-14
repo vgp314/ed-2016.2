@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<question id="Azul-q6" level="1" subject="Árvores Binárias">
+	<text>
+		<p>
+		Considere todos os caminhos simples de $A$ a $E$ no grafo direcionado abaixo. Qual dos números abaixo não é o tamanho de nenhum desses caminhos?
+		</p>
+		<img src="images/grafo2.png"/> <br/>
+	<explanation>
+		Uma breve explicação sobre grafos direcionados pode ser encontrada em: 
+		   <a href="https://pt.wikipedia.org/wiki/Grafo_orientado">Grafo Direcionado</a>
+	</explanation>
+	</text>
+	
+
+	<choice type="incorrect">
+		<text>12</text>
+		<explanation>
+		O tamanho do caminho simples ACBDFE é 12.
+		</explanation>
+	</choice>
+	
+
+	<choice type="incorrect">
+		<text>30</text>
+		<explanation>
+		O tamanho do caminho simples ABDCFE é 30.
+		</explanation>
+	</choice>
+	
+
+	<choice type="incorrect">
+		<text>25</text>
+		<explanation>
+		O tamanho do caminho simples ABDCE é 25.
+		</explanation>
+	</choice>
+	<choice type="correct">
+		<text>22</text>
+		<explanation>
+		Nenhum caminho simples de tamanho 22 existe de A a E. 
+		</explanation>
+	</choice>
+	
+
+	<choice type="incorrect">
+		<text>8</text>
+		<explanation>
+		O tamanho do caminho simples ACE é 8.	
+		</explanation>
+	</choice>
+</question>
