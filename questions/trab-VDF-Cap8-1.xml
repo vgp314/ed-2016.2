@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<question id="VDF-Cap8-1" level="1" capitulo="8">
+  <text>
+    <p>Sobre redução de problemas de busca é correto afirmar:</p>
+  </text>
+  
+  <choice type="incorrect">
+    <text>
+      A implementação de um problema de busca A por meio de um algoritmo B independe da complexidade de B.
+    </text>
+    <explanation>
+      B nunca será menos complexo que A. Se o for, é porque a complexidade de A foi mal avaliada.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      Nem todo problema de busca pode ser reduzido a um agoritmo NP-completo.
+    </text>
+    <explanation>
+      Por definição, um problema é NP-completo se todos os demais problemas de busca se reduzirem a ele.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      Para se saber se um problema de busca A é NP-completo basta reduzi-lo a um algoritmo de busca B NP-completo.
+    </text>
+    <explanation>
+      Na redução de A para B, a complexidade de A pode ser menor que B, mas nunca o contrário.
+      Assim, para se confirmar a complexidade de A em relação a B, deve-se reduzir B para A.
+    </explanation>
+  </choice>
+
+  <choice type="correct">
+    <text>
+      Sendo 3SAT é um problema de busca NP-completo e 2SAT é um problema de busca P, então 2SAT reduz à 3SAT.
+    </text>
+    <explanation>
+      Por definição, um problema é NP-completo se todos os demais problemas de busca se reduzirem a ele.
+      Logo, um problema 2SAT reduz a um problema 3SAT.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      Sendo B um algoritmo de otimização, a complexidade do algoritmo A' que reduz um problema A a B será menor ou igual à complexidade de B.
+    </text>
+    <explanation>
+      A complexidade do algoritmo A' será a mesma do algoritmo B, aumetada dos custos de preprocessamento da entrada e de posprocessamento da solução.
+    </explanation>
+  </choice>
+
+
+  <choice type="incorrect">
+    <text>
+      Um problema qualquer A reduzível a um problema B NP-Completo não admite redução a um algoritmo de otimização.
+    </text>
+    <explanation>
+      A redução de A para B nada diz da complexidade mínima de A.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      Um problema de busca NP-completo nunca se reduz a outro problema NP-completo.
+    </text>
+    <explanation>
+      Por definição, um problema é NP-completo se todos os demais problemas de busca se reduzirem a ele.
+      Logo, qualquer problema de busca (NP-completo ou não) se reduz a outro problema NP-completo.
+    </explanation>
+  </choice>
+  
+</question>
