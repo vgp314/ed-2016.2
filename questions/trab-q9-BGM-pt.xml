@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<question id="BGM-q9" level="3" chapter="8">
+
+    <text>
+       <p>Ao realizar a análise de algoritmos, é comum tipificar os problemas em 2 grandes grupos: Problemas fáceis de se resolver computacionalmente (resolvidos em tempo polinomial a partir do tamanho da entrada ou apenas Problemas do tipo <i>P</i>) e problemas difícies de se resolver computacionalmente (resolvidos em tempo não determínistico polinomialmente a partir da entrada ou apenas problemas do tipo <i>NP-Complete</i>). Avalie os problemas numerados de I a VI, indicando a alternativa correta de tipificação dos problemas apresentados: </p>
+
+<p>  I. Dado um grafo G = (V, A), com um dado número de vértices V e arestas A, identificar o maior conjunto S $\subset$ V de vértices independentes, ou seja, o maior número de vértices que não são conectados entre si por uma aresta.</p>
+<p> II. 2-SAT </p>
+<p>III. 3-SAT </p>
+<p> IV. Identificar o caminho mais curto entre 2 vértices de um grafo direcionado que possui arestas com peso negativo.</p>
+<p>  V. Dado um grafo G = (V, A), com um dado número de vértices V e arestas A, identificar o maior conjunto S $\subset$ V de vértices de cobertura, ou seja, o maior número de vértices que tenha ao menos uma das pontas, de cada uma das arestas do grafo em S. </p>
+<p> VI. Identificar o caminho mais curto entre 2 vértices de um grafo direcionado que possui apenas arestas com peso maior ou igual a 1. </p>
+    </text>
+
+    <explanation>
+        <i>
+	<p>NP-Complete: I, III, V</p>
+	<p>          P: II, IV, VI</p>
+	</i>
+    </explanation>
+
+	<choice type="correct">
+		<text> 
+		NP-Complete: I, III, V  /  P: II, IV, VI
+		</text>
+		<explanation>
+			
+		</explanation>
+	</choice>
+
+	<choice type="incorrect">
+		<text> 
+		NP-Complete: I, III, V, IV  /  P: II, VI
+		</text>
+		<explanation>
+		Verifique que o problema IV pode ser resolvido utilizando o algoritmo Bellman-Ford que possui complexidade polinomial
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text> 
+		NP-Complete: III, V  /  P: I, II, IV, VI
+		</text>
+		<explanation>
+		O problema I é também conhecido como INDEPENDENT SET, e se trata de um problema clássico NP.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text> 
+		NP-Complete: I, III  /  P: II, IV, V, VI
+		</text>
+		<explanation>
+		O problema V é também conhecido como VERTEX COVER, e se trata de um problema clássico NP.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text> 
+		NP-Complete: I, III, IV /  P: II, V, VI
+		</text>
+		<explanation>
+		O problema V é também conhecido como VERTEX COVER, e se trata de um problema clássico NP.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text> 
+		NP-Complete: I, IV /  P: II, III, V, VI
+		</text>
+		<explanation>
+		O problema III conhecido como 3-SAT é um problema clássico NP.
+		</explanation>
+	</choice>
+
+
+</question>

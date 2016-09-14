@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<question id="BGM-q5" level="3" subject="Grafo">
+<question id="BGM-q5" level="3" chapter="4">
 
     <text>
        <p>Um professor de estrutura de dados sugere aos seus alunos um método para encontrar o caminho mais curto entre 2 vértices <i>x</i> e <i>y</i>, de um grafo G direcionado com arestas de peso negativo: adicione uma constante <i>c</i> , suficientemente grande, ao peso de todas as arestas do grafo, de forma que os novos pesos, após a adição, sejam obrigatoriamente positivos. Em seguida, utilize o algoritmo Dijkstra shortest path iniciando pelo vértice <i>x</i>. Indique a alternativa verdadeira?</p>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<question id="BGM-q1" level="1" subject="Big-O Notation">
+<question id="BGM-q1" level="1" chapter="0">
 
 	<text>
        <p>Ordene as seguintes funções abaixo em ordem crescente de acordo com o seu "growth rate" (ou seja, g(n) posterior a f(n) na sua lista, se e somente se, f(n)=O(g(n))). </p>

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<question id="BGM-q2a" level="1" subject="Chapter3">
+<question id="BGM-q2a" level="2" chapter="3">
 
     <text>
-       <p>Realize Depth-first search (DFS) no grafo a seguir. Sempre que existir uma escolha de vertices possíel, escolha pelo vértice que vem primeiro em ordem alfabética. Classifique as arestas em relação a: TREE, FORWARD, BACK ou CROSS e o respectivo número PRE e POST de cada vértice, de forma a responder a alternativa correta. </p>
-       <img src="images/graph01.png"/>	
+       <p>Realize Depth-first search (DFS) no grafo a seguir. Sempre que existir uma escolha de vertices possíel, escolha pelo vértice que vem primeiro em ordem alfabética. Classifique as arestas em relação a: TREE, FORWARD, BACK ou CROSS. Considerando essa tipificação, podemos identificar exatamente o seguinte número de arestas:  </p>
+       <img src="images/graph01.png" height="400" width="600"/>	
 
     </text>
 
@@ -15,35 +15,35 @@ FORWARD: nenhuma - Arestas FORWARD conectam o vértice a um vértice descendente
 <p>PRE/POST de cada vértice: A:1/18, B:2/11, C:12/17, D:13/16, E:3/10, F:4/9, G:5/8, H:6/7, I:14/15</p></i>
     </explanation>
 	<choice type="correct">
-		<text>Considerando arestas do tipo BACK e CROSS, podemos identificar exatamente o seguinte número de arestas: 3 BACK e 2 CROSS </text>
+		<text>3 BACK e 2 CROSS </text>
 		<explanation>
 			
 		</explanation>
 	</choice>
 	<choice type="incorrect">
-		<text>Considerando arestas do tipo BACK, FORWARD e CROSS, podemos identificar exatamente o seguinte número de arestas:  3 BACK, 1 FORWARD e 1 CROSS</text>
+		<text>3 BACK, 1 FORWARD e 1 CROSS</text>
 		<explanation>
 			Não existem arestas do tipo FORWARD no grafo. Existem apenas arestas do tipo: TREE, BACK e CROSS.
 		</explanation>
 	</choice>
 	<choice type="incorrect">
-		<text>Considerando arestas do tipo BACK e CROSS, podemos identificar exatamente o seguinte número de arestas: 3 BACK and 0 CROSS</text>
+		<text>3 BACK and 0 CROSS</text>
 		<explanation>Repare que exisem arestas CROSS no grafo. Por exemplo, a aresta (c,b) é CROSS.
 		</explanation>
 	</choice>
 	<choice type="incorrect">
-		<text>Considerando arestas do tipo BACK e CROSS, podemos identificar exatamente o seguinte número de arestas:  2 BACK e 2 CROSS </text>
+		<text>2 BACK e 2 CROSS </text>
 		<explanation>Existem 3 arestas do tipo CROSS no grafo: (g,b), (d,a), (i,c)
 		</explanation>
 	</choice>
 	<choice type="incorrect">
-		<text>Considerando arestas do tipo BACK e CROSS, podemos identificar exatamente o seguinte número de arestas: 2 BACK, 8 FORWARD e 3 CROSS </text>
+		<text>2 BACK, 8 FORWARD e 3 CROSS </text>
 		<explanation>
 			Repare que arestas que fazem parte da árvore DFS são chamadas TREE e não FORWARD.
 		</explanation>
 	</choice>
 	<choice type="incorrect">
-		<text>Considerando arestas do tipo BACK e CROSS, podemos identificar exatamente o seguinte número de arestas:  2 BACK e 3 CROSS</text>
+		<text>2 BACK e 3 CROSS</text>
 		<explanation>
 			Existem 3 arestas do tipo CROSS no grafo: (g,b), (d,a), (i,c). Verifique o número de arestas CROSS também.
 		</explanation>
