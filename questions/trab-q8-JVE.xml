@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question level="3" chapter="8">
+	<text>
+       <p>Determine qual dos seguintes problemas é <a href="https://pt.wikipedia.org/wiki/NP-completo">NP-completo</a>.</p>
+	</text>
+	<choice type="incorrect">
+		<text>2 - SAT: Determinação da satisfabilidade booleana com dois literais.</text>
+		<explanation>
+			O problema 2 - SAT pode ser resolvido a partir de uma redução polinomial em um problema de grafo. Que pode
+            ser resolvido a partir de um DFS tendo como raiz cada um dos literais. A alcançabilidade da negação de um
+            literal a partir do literal implica na não satisfatibilidade da sentença. Deve-se então realizar essa verificação
+            para cada literal. O que leva tempo polinomial.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Minimum Spanning Tree (Árvore Geradora mínima): Determinar árvore geradora com a soma dos pesos de arestas
+        mínima.</text>
+		<explanation>
+			Esse problema pode ser resolvido de algoritmos gulosos, como o algoritmo de <a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm">Prim</a> ou <a href="https://en.wikipedia.org/wiki/Kruskal%27s_algorithm">Kruskal</a>, ambos de tempo polinomial.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Mínimo Caminho: Dado dois vértices em um grafo, determinar um caminho entre esses vértices de 
+        forma que a soma das arestas seja mínima. </text>
+		<explanation>
+			O problema pode ser resolvido pelo algoritmo de <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra</a>
+            de forma gulosa em tempo polinomial. O algoritmo <a href="https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm">
+            Bellman–Ford</a> também resolve o problema em tempo polinomial e é mais versátil, admitindo arestas negativas.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Caminho Euleriano: Encontrar um <a href="https://en.wikipedia.org/wiki/Eulerian_path">Caminho Euleriano</a> 
+        (caso exista) em um grafo.</text>
+		<explanation>
+			Pode ser resolvido em tempo linear a partir do algoritmo de <a href="https://en.wikipedia.org/wiki/Eulerian_path">Hierholzer</a>.
+		</explanation>
+	</choice>
+	<choice type="correct">
+		<text>Ciclo hamiltoniano: Encontrar um <a href="https://en.wikipedia.org/wiki/Hamiltonian_path"> Caminho Hamiltoniano</a>
+        (caso exista) em um grafo.</text>
+		<explanation>
+			Trata-se de um problema NP-completo.
+		</explanation>
+	</choice>
+</question>
