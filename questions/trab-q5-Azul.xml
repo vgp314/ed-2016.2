@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="Azul-q5" level="1" subject="Complexidade">
+	<text>
+		<p>$A$ é um vetor de tamanho $N$. Os elementos de $A$ são inteiros e não há inteiros iguais. Tome a variável $x$ como sendo um inteiro. Qual das alternativas apresenta uma operação que necessita de um tempo menor do que $O(N)$? </p><br/>
+	</text>
+	<choice type="incorrect">
+		<text> Deletar o menor elemento de $A$.
+		</text>
+		<explanation>
+		Para deletar o menor elemento de $A$, precisamos primeiro determinar quem é o menor elemento de $A$, o que custa um tempo que é $O(N)$.	
+		</explanation>
+	</choice>
+	<choice type="correct">
+		<text>Se o vetor for ordenado, determinar se o inteiro $x$ está em $A$.
+		</text>
+		<explanation>
+		Com uma busca binária, é possível determinar de $x$ está em $A$ em um tempo de $O(log N)$, que é menor que $O(N)$.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Inserir em $A$ o inteiro que é uma unidade menor que o atual menor elemento.
+		</text>
+		<explanation>
+		Além da inserção, deve-se primeiro descobrir quem é o menor elemento de $A$, que custa um tempo que é $O(N)$.	
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Encontrar a soma dos elementos de $A$.
+		</text>
+		<explanation>
+		Supondo que cada soma tome um tempo constante, ou seja, cada soma seja $O(1)$, para somar $N$ inteiros, precisamos de no mínimo $O(N)$ operações.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Ordenar os elementos de $A$ pelo MergeSort, que obedece a relação de recorrência: $T(N) = 2T(N/2) + O(N)$.
+		</text>
+		<explanation>
+		Resolvendo a equação de recorrência, obtém-se que $T(N) = O(Nlog N)$.
+		</explanation>
+	</choice>
+</question>
