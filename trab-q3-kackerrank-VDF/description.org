@@ -2,13 +2,17 @@
 #+AUTHOR:    Vinicius Pereira , Diego Navarro, Fernando Issao
 #+EMAIL:     viniciusgomespe@gmail.com
 
-Você é um engenheiro e possui n tijolos em formato de cubo, de larguras diferentes. Existe uma parede de altura h, e você gostaria de
-empilhar esses tijolos de modo a usar o menor número possível de tijolos para completar toda a parede.
-Dado a altura da parede, a largura dos n tijolos, a resposta será o número de tijolos mínimos. Considere que há sempre um tijolo de tamanho 1, e você pode usar quantos
-tijolos quiser de um dado tamanho. Além disso, considere que só há 26 tipos de tijolos.
-Em cada teste, a primeira linha possui dois números a e b, sendo a o número de tipos de tijolos e b o tamanho da
-parede. A próxima linha possui a valores, representendo a largura de cada tijolo.
-A sáida é o número mínimo de tijolos.
+Você é um engenheiro e possui n tijolos em formato de cubo, de
+larguras diferentes. Existe uma parede de altura h, e você gostaria de
+empilhar esses tijolos de modo a usar o menor número possível de
+tijolos para completar toda a parede.  Dado a altura da parede, a
+largura dos n tijolos, a resposta será o número de tijolos
+mínimos. Considere que há sempre um tijolo de tamanho 1, e você pode
+usar quantos tijolos quiser de um dado tamanho. Além disso, considere
+que só há 26 tipos de tijolos.  Em cada teste, a primeira linha possui
+dois números a e b, sendo a o número de tipos de tijolos e b o tamanho
+da parede. A próxima linha possui a valores, representendo a largura
+de cada tijolo.  A sáida é o número mínimo de tijolos.
 
 Exemplo:
 

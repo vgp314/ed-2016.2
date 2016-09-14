@@ -44,7 +44,8 @@ int main() {
      g[valor1%97][valor2%97]=1;
      g[valor2%97][valor1%97]=1;                                             
    }
-   //percorrer todos os nós, se foi visitado alguma vez, pulo pro próximo. No inicio, nenhum foi visitado
+   //percorrer todos os nós, se foi visitado alguma vez, pulo pro
+   //próximo. No inicio, nenhum foi visitado
    for(j=0;j<a;j++){                                                                           
       //se não foi visitado
      if(visited[j]==0){
@@ -56,8 +57,8 @@ int main() {
             visited[k]=1;
         }                                                                            
      }
-     for( k=0;k<a;k++){                                                                                            
-       //vejo quem foi visitado nessa rodada. Formam mais um componente conexo
+     for( k=0;k<a;k++){                                                                                           //vejo quem foi visitado nessa rodada. Formam mais um
+       //componente conexo
         if(visited[k]!=done[k]){				
           resp = k+97;
           done[k]=1;

@@ -1,10 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<question id="VDF-MuliplEDaC-1" level="1" subject="MulplEdDaC">
+<?xml version="1.0" encoding="utf-8"?>
+<question id="VDF-Cap2-1" level="1" capitulo="2">
   <text>
-    <div>
-      Na multiplicação dos números binários x e y implementado por algoritmo divide-and-conquer, cada número é dividido ao meio, tal que x = 2^(n/2)*xh + xl e y = 2^(n/2)*yh + yl.
-      Considerando a multiplicação de 01001100 e 00101001, são passos na primeira iteração/recursão da solução do problema:
-    </div>
+    <p>
+      Na multiplicação dos números binários $x$ e $y$ implementado por
+      algoritmo divide-and-conquer, cada número é dividido ao meio,
+      tal que $x = 2^(n/2) * xh + xl$ e $y = 2^(n/2)*yh + yl$.
+      Considerando a multiplicação de $01001100$ e $00101001$, são
+      passos na primeira iteração do algorítmo:
+    </p>
   </text>
 
   <choice type="correct">

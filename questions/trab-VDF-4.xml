@@ -11,10 +11,15 @@
   
   <code> datatype lista_encadeada = Vazio | Encadear lista_encadeada lista_encadeada </code>
   
-  Queremos adaptar a definição da lista encadeada de forma a comportar listas de números de Peano; e definir uma função "ap-lista" que permita reduzir a lista a um número segundo qualquer função (soma, multiplicação, etc.) a um único número.
+  Queremos adaptar a definição da lista encadeada de forma a comportar
+  listas de números de Peano; e definir uma função "ap-lista" que
+  permita reduzir a lista a um número segundo qualquer função (soma,
+  multiplicação, etc.) a um único número.
   
-  Corrija o tipo "lista_encadeada" e apresente a assinatura de tipo para a função "ap_lista", e mostre como obter o produtório de uma lista.
-    .</text>
+  Corrija o tipo "lista_encadeada" e apresente a assinatura de tipo
+  para a função "ap_lista", e mostre como obter o produtório de uma
+  lista.</text>
+
   <explanation>Convém escrever as funções explicitamente para detectar erros.</explanation>
   <choice type="correct">
     <text>
