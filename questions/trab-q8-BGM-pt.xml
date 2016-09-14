@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="1" level="2" chapter="6">
+	<text>
+		<p>Um problema muito comum em programação dinâmica é o de determinar a combinação linear mínima de moedas para uma quantia fixa, ou seja, qual o número mínimo de moedas necessárias para obter um determinado valor. Um exemplo desse problema é: suponha um conjunto de moedas nos valores {1,2,3}, o número mínimo de moedas para obter um N = 5 é de 2 moedas com valores {2,3}. Implemente um algoritmo eficiente que resolva esse problema e determine a quantidade mínima de moedas de valores (1,6,7,11) para completar o valor 14321.</p>
+	</text>
+	<choice type="correct">
+		<text> 1303 
+		</text>
+		<explanation>
+			 
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>14321</text>
+		<explanation>
+			Há uma maneira mais eficiente do que 14321 moedas de valor 1.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>1305</text>
+		<explanation>
+			Há um número menor do que 1301 moedas de valor 11, 3 de valor 1 e 1 de valor 7.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>1298</text>
+		<explanation>
+			Essa combinação não é possível.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>1306</text>
+		<explanation>
+			Há um número menor do que 1301 moedas de valor 11, 4 de valor 1 e 1 de valor 6.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>1311</text>
+		<explanation>
+			Há um número menor do que 1301 moedas de valor 11 e 10 de valor 1.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>1301</text>
+		<explanation>
+			Valor insuficiente, são necessárias mais que 1301 moedas de 11.
+		</explanation>
+	</choice>
+</question>
