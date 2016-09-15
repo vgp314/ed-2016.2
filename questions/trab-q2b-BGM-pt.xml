@@ -3,7 +3,7 @@
 
 	<text>
        <p>Realize Depth-first search (DFS) no grafo a seguir. Sempre que existir uma escolha de vertices possíel, escolha pelo vértice que vem primeiro em ordem alfabética. Identifique o respectivo número PRE e POST de cada vértice durante o processamento DFS, de forma a responder a alternativa correta. </p>
-       <img src="images/graph01.png" height="400" width="600"/>	
+       <img src="images/graph-BGM-q2" height="400" width="600"/>	
 
   </text>
 
