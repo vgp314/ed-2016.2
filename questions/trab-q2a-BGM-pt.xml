@@ -3,7 +3,7 @@
 
     <text>
        <p>Realize Depth-first search (DFS) no grafo a seguir. Sempre que existir uma escolha de vertices possíel, escolha pelo vértice que vem primeiro em ordem alfabética. Classifique as arestas em relação a: TREE, FORWARD, BACK ou CROSS. Considerando essa tipificação, podemos identificar exatamente o seguinte número de arestas:  </p>
-       <img src="images/graph01.png" height="400" width="600"/>	
+       <img src="images/graph-BGM-q2.png" height="400" width="600"/>	
 
     </text>
 
