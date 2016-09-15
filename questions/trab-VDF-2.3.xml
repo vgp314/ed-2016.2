@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<question id="VDF-Cap2-3" level="2" capitulo="2">
+
+  <text>
+    <p>O quicksort é um algoritmo de ordenação de sequencias que segue
+    a seguinte metodologia:</p>
+    <ul>
+    <li>Seleção de um número da sequencia como pivô;</li>
+    <li>Separação dos números menores que o pivô em uma sequencia
+    parcial (ou subsequência) A;</li>
+    <li>Separação dos números maiores que o pivô em uma sequencia
+    parcial (ou subsequência) B;</li>
+    <li>Repetição da metodologia anterior para as sequencias parciais
+    A e B.</li>
+    </ul>
+    <p>Sobre o algoritmo do quick sort é correto afirmar:</p>
+  </text>
+  
+  <choice>
+    <choice type="incorrect">
+      <text>
+        O quicksort não funciona com sequencias que possuam repetição
+        de valores.
+      </text>
+      <explanation>
+        Não há qualquer limitação quanto à metodologia, dependendo da
+        implementação para dar suporte a números repetidos.
+      </explanation>
+    </choice>
+
+    <text type="incorrect">
+      O método de seleção do pivô é relevante apenas para sequencias
+      desordenadas.
+    </text>
+    <explanation>
+      O pivô ideal é aquele capaz de criar sequências parciais A e B
+      do mesmo tamanho, isto é, dividindo perfeitamente ao meio a
+      sequência a ser ordenada.  Contudo, não é possível conhecer
+      <i>ex ante</i> este valor ideal.  Em caso de sequencia
+      desordenada, pouco importa o método de seleção do pivô, já que
+      não há relação entre a posição e o valor dos elementos.
+    </explanation>
+  </choice>
+
+  <choice>
+    <text type="incorrect">
+      O método de seleção do pivô é irrelevante para sequências
+      ordenadas.
+    </text>
+    <explanation>
+      O pivô ideal é aquele capaz de criar sequências parciais A e B
+      do mesmo tamanho.  Em sequencias ordenadas, um método de seleção
+      de pivô pode produzir sequências parciais A e B bastante
+      bastante assimétricas, podendo, no limite, produzir apenas a
+      sequencia A ou B.  Consequentemente, faz-se necessário um número
+      maior de ordenações parciais, tornando o método menos eficiente.
+    </explanation>
+  </choice>
+
+  <choice>
+    <text type="correct">
+      A seleção aleatória do pivô tem o objetivo de preservar a
+      eficiência do algoritmo em caso de sequências ordenadas.
+    </text>
+    <explanation>
+      O pivô ideal é aquele capaz de criar sequências parciais A e C
+      do mesmo tamanho.  Em sequencias ordenadas, a seleção aleatória
+      evita que haja seleção exclusiva de valores situados nos
+      extremos.
+    </explanation>
+  </choice>
+
+  <choice>
+    <text type="correct">
+      A seleção aleatória do pivô tem o objetivo de maximizar os
+      benefícios da técnica de dividir para conquistas em caso de
+      sequências ordenadas.
+    </text>
+    <explanation>
+      A técnica dividir para conquistar utilizada no quicksort visa
+      diminuir o número de iteraçoes/recursões para log2(n).  Em
+      sequencias ordenadas, a seleção não aleatória pode criar, no
+      limite, uma subsequencia de tamanh n-1, exigindo n
+      iterações/recursões para completar a ordenação.  O uso de um
+      pivô aleatório, neste caso, evita situações do tipo, preservando
+      as vantagens da técnica.
+    </explanation>
+  </choice>
+
+  <choice>
+    <text type="incorrect">
+      A posição ordenada de cada valor só será conhecida após a última
+      recursão.
+    </text>
+    <explanation>
+      A posição exata dos valores iguais ao pivot é conhecida ao final
+      de cada recursão.
+    </explanation>
+  </choice>
+
+  <choice>
+    <text type="incorrect">
+      A separação de valores iguais ao pivô serve apenas para reduzir
+      o tamanho das sequências parciais A e B.
+    </text>
+    <explanation>
+      A separação dos valores iguais ao pivô serve para colocá-los na
+      posição final da sequência ordenada, o que a torna passo
+      indispensável na metodologia do algoritmo.
+    </explanation>
+  </choice>
+
+  <choice>
+    <text type="incorrect">
+      O método de escolha do pivô influi na eficiência (velocidade) de
+      ordenação.
+    </text>
+    <explanation>
+      O método de escolha do pivô infui na eficiência de ordenação de
+      sequência que possuam algum tipo de ordenação.  Em sequencias
+      desordenadas, não há influência.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      A implementação do algoritmo é necessariamente recursiva.
+    </text>
+    <explanation>
+      A implementação pode ser recursiva ou iterativa.
+    </explanation>
+  </choice>
+
+  <choice type="correct">
+    <text>
+      Na separação dos valores menores ou maiores que o pivô, pode-se
+      inverter a ordenação nas respectivas subsequencias sem prejuízo
+      ao resultado final.
+    </text>
+    <explanation>
+      A ordem nas sequencias parciais A e B é irrelevante, já que elas
+      serão ordenadas nas iterações/recursões subsequentes.
+      Observa-se que a inversão na ordenação pode simplificar a
+      implementação do algoritmo em alguns casos.
+    </explanation>
+  </choice>
+
+  <choice type="correct">
+    <text>
+      Comparativamente ao mergesort, o uso de pivô no quicksort
+      dispensa operações entre as sequencias parciais após a divisão.
+    </text>
+    <explanation>
+      No mergesort, a ordenação ocorre durante a mescla das sequencias
+      parciais (ordenadas).  Assim, após a divisão, as sequências são
+      comparadas entre si para a efetiva ordenação de valores.  No
+      quicksort, a ordenação ocorre na separação em função do pivô,
+      tornando as sequências parciais independentes entre si.  Durante
+      a separação, valores iguais ao pivô são colocados na posição
+      definitiva.  Assim, não sucede qualquer operação entre as
+      sequências parciais após o ato de divisão.
+    </explanation>
+  </choice>
+</question>

@@ -1,0 +1,19 @@
+O problema consiste em, dado um grafo com V vértices e E arestas, encontrar a menor distância entre o nó inicial S e os outros N-1 vértices.
+**OBS:** Se não existe caminho de S para um determinado nó a distancia deve ser definida como -1.
+A primeira linha do arquivo de entrada possuirá três inteiros N, M e S que representam o número de nós, o número de arestas do grafo e o vértice inicial respectivamente.
+As próximas M linhas do arquivo de entrada possuirão três inteiros X, Y e Z que representam uma aresta entre X e Y com peso Z.
+A saída será dada em uma linha única com N-1 inteiros separados por espaço representando as distâncias entre S e os demais vértices em ordem crescente.
+
+Exemplo:
+
+Entrada:
+4 4 1
+1 2 24
+1 4 20
+3 1 3
+4 3 12
+
+Saída:
+2 24
+3 3
+4 15

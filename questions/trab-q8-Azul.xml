@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="Azul-q8" level="1" subject="Algoritmo de Busca">
+	<text>
+		<p>
+		Observe a função abaixo, em pseudocódigo, que tem como parâmetros um vetor $A$ e uma string $s$. Se $A$ corresponde a uma lista das strings: "fundação","getúlio","vargas","mestrado","emap","2016","matemática","aplicada","estrutura","dados","algoritmos", para qual dos valores de $s$ abaixo a função retorna um valor mais rapidamente? 
+		</p><br/>
+<pre><code>
+buscar(vetor A, string s) {
+	i = tamanho(A)
+	enquanto (i>0) {
+		if (A[i] == s) retorne (i)
+		i = i-1
+	}
+	retorne("Não há a string no vetor")
+}
+</code></pre>
+	</text>
+	<choice type="incorrect">
+		<text>
+		"matemática"
+		</text>
+		<explanation>
+		O algoritmo inicia sua busca na última posição do vetor, e enquanto não encontra a string, vai voltando até alcançar o início do vetor. Dessa forma, quanto mais próximo do final do vetor estiver a string, mais rápido a função retorna um valor, dado que vai alcançar tal string antes. Logo, dentre as opções, a função atinge antes a string "estrutura", não "matemática".
+		</explanation>
+	<choice type="incorrect">
+		<text>
+		"2016"
+		</text>
+		<explanation>
+		O algoritmo inicia sua busca na última posição do vetor, e enquanto não encontra a string, vai voltando até alcançar o início do vetor. Dessa forma, quanto mais próximo do final do vetor estiver a string, mais rápido a função retorna um valor, dado que vai alcançar tal string antes. Logo, dentre as opções, a função atinge antes a string "estrutura", não "2016".
+		</explanation>
+	<choice type="incorrect">
+		<text>
+		"mestrado"
+		</text>
+		<explanation>
+		O algoritmo inicia sua busca na última posição do vetor, e enquanto não encontra a string, vai voltando até alcançar o início do vetor. Dessa forma, quanto mais próximo do final do vetor estiver a string, mais rápido a função retorna um valor, dado que vai alcançar tal string antes. Logo, dentre as opções, a função atinge antes a string "estrutura", não "mestrado".
+		</explanation>
+	<choice type="incorrect">
+		<text>
+		"fundação"
+		</text>
+		<explanation>
+		O algoritmo inicia sua busca na última posição do vetor, e enquanto não encontra a string, vai voltando até alcançar o início do vetor. Dessa forma, quanto mais próximo do final do vetor estiver a string, mais rápido a função retorna um valor, dado que vai alcançar tal string antes. Logo, dentre as opções, a função atinge antes a string "estrutura", não "fundação".
+		</explanation>
+	<choice type="correct">
+		<text>
+		"estrutura"
+		</text>
+		<explanation>
+		O algoritmo inicia sua busca na última posição do vetor, e enquanto não encontra a string, vai voltando até alcançar o início do vetor. Dessa forma, quanto mais próximo do final do vetor estiver a string, mais rápido a função retorna um valor, dado que vai alcançar tal string antes. Logo, dentre as opções, a função atinge antes a string "estrutura".
+		</explanation>
+	
+</question>

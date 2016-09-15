@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="Azul-q6" level="2" subject="Componentes conexos">
+	<text>
+		<p>
+		Assinale a alternativa que indica quantos nós possui o maior componente fortemente conexo do grafo abaixo.
+		</p>
+		<img src="images/graph_SCC.png"/> <br/>
+	<explanation>
+		Uma breve explicação sobre o algoritmo pode ser encontrada em: 
+		   <a href="http://www.columbia.edu/~cs2035/courses/csor4231.F11/scc.pdf">Componentes Fortemente Conexos</a>
+	</explanation>
+	</text>
+	<choice type="incorrect">
+		<text>3</text>
+		<explanation>
+			Existe um componente fortemente conexo com mais do que 3 vértices no grafo.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>5</text>
+		<explanation>
+			Não existe um componente fortemente conexo com 5 vértices no grafo.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>10</text>
+		<explanation>
+			Não existe um componente fortemente conexo com 5 vértices no grafo.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>1</text>
+		<explanation>
+			Existem componentes fortemente conexos com mais do que 1 vértice.
+		</explanation>
+	</choice>
+	<choice type="correct">
+		<text>4</text>
+		<explanation>		
+		</explanation>
+	</choice>
+</question>

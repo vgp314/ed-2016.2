@@ -1,0 +1,18 @@
+O problema consiste em receber uma sequência de inteiros {a[i]} com N elementos e responder o tamanho de sua maior subsequência crescente.
+**Dica:** Para resolver o problema devem ser utilizados os conceitos de programação dinâmica. Uma explicação sobre o assunto pode ser encontrada em:  http://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/sscm.html
+A primeira linha do arquivo de entrada conterá um inteiro N. E as próximas N linhas conterão os valores das entradas a[i] da sequência.
+A saída será feita em uma única linha contendo o tamanho da maior subsequencia crescente.
+
+Exemplo:
+
+Entrada:
+6
+9
+5
+7
+4
+3
+8
+
+Saída:
+3

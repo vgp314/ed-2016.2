@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="Azul-q3" level="2" subject="Algoritmo guloso">
+	<text>
+		<p>Uma aplicação dos algoritmos gulosos é encontrar a árvore de extensão mínima de um grafo. Para tal utiliza-se o algoritmo de Kruskal, que consiste em iniciar-se com o grafo vazio e repetidamente adicionar a aresta de menor peso que não gere um ciclo.
+		</p>
+		<p>
+			Quais das alfirmações abaixo estão corretas a respeito da árvore resultante da aplicação do algoritmo de Kruskal no grafo abaixo?
+		</p>
+		<img src="images/grafo.png"/> <br/>
+	<explanation>
+		Uma breve explicação sobre o algoritmo pode ser encontrada em: 
+		   <a href="http://www.ime.usp.br/~pf/algoritmos_para_grafos/aulas/kruskal.html">Algoritmo de Kruskal</a>
+	</explanation>
+	</text>
+	<choice type="incorrect">
+		<text>Todas as arestas com peso menor que 4 pertencem a árvore resultante. 
+		</text>
+		<explanation>
+			A aresta CD não pertence.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>A aresta BC pode pertencer ou não as árvores resultantes</text>
+		<explanation>
+			A aresta BC pertence a árvore resultante.
+		</explanation>
+	</choice>
+	<choice type="correct">
+		<text>A aresta BC pertence a árvore resultante</text>
+		<explanation>
+			A aresta BC pertence a árvore resultante.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>Ou a aresta BF ou a aresta BG pertencem as árvores resultates</text>
+		<explanation>
+			Ambas as arestas não pertencem a árvore resultante.
+		</explanation>
+	</choice>
+	<choice type="correct">
+		<text>A aresta DH não pertence as árvores resultantes.
+		</text>
+		<explanation>
+			A aresta DH não pertence a árvore resultante, pois geraria um ciclo.
+		</explanation>
+	</choice>
+</question>
