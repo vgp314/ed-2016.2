@@ -21,7 +21,7 @@
 
 	<choice type="correct">
 		<text> 
-		NP-Complete: I, III, V  /  P: II, IV, VI
+		São problemas NP-Complete: I, III, V  /  São problemas P: II, IV, VI
 		</text>
 		<explanation>
 			
@@ -30,7 +30,7 @@
 
 	<choice type="incorrect">
 		<text> 
-		NP-Complete: I, III, V, IV  /  P: II, VI
+		São problemas NP-Complete: I, III, V, IV  /  São problemas P: II, VI
 		</text>
 		<explanation>
 		Verifique que o problema IV pode ser resolvido utilizando o algoritmo Bellman-Ford que possui complexidade polinomial
@@ -38,7 +38,7 @@
 	</choice>
 	<choice type="incorrect">
 		<text> 
-		NP-Complete: III, V  /  P: I, II, IV, VI
+		São problemas NP-Complete: III, V  /  São problemas P: I, II, IV, VI
 		</text>
 		<explanation>
 		O problema I é também conhecido como INDEPENDENT SET, e se trata de um problema clássico NP.
@@ -46,7 +46,7 @@
 	</choice>
 	<choice type="incorrect">
 		<text> 
-		NP-Complete: I, III  /  P: II, IV, V, VI
+		São problemas NP-Complete: I, III  /  São problemas P: II, IV, V, VI
 		</text>
 		<explanation>
 		O problema V é também conhecido como VERTEX COVER, e se trata de um problema clássico NP.
@@ -54,7 +54,7 @@
 	</choice>
 	<choice type="incorrect">
 		<text> 
-		NP-Complete: I, III, IV /  P: II, V, VI
+		São problemas NP-Complete: I, III, IV /  São problemas P: II, V, VI
 		</text>
 		<explanation>
 		O problema V é também conhecido como VERTEX COVER, e se trata de um problema clássico NP.
@@ -62,7 +62,7 @@
 	</choice>
 	<choice type="incorrect">
 		<text> 
-		NP-Complete: I, IV /  P: II, III, V, VI
+		São problemas NP-Complete: I, IV /  São problemas P: II, III, V, VI
 		</text>
 		<explanation>
 		O problema III conhecido como 3-SAT é um problema clássico NP.
