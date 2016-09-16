@@ -1,27 +1,27 @@
-#+TITLE: ExercÌcio 2 - CapÌtulo 5 (Tardos)
+#+TITLE: Exerc√≠cio 2 - Cap√≠tulo 5 (Tardos)
 #+AUTHOR: Bruno Fonseca, Gustavo Avila, Matheus Alvarenga
 #+EMAIL: brunomf@gmail.com, guavila@gmail.com, alvarenga.mateus@gmail.com
 
-Contagem de inversıes "significantes"
+* Contagem de invers√µes "significantes"
 
-O problema de contagem da quantidade de inversıes em uma lista define que uma invers„o ocorre quando $i < j$, $a_{i} > a_{j}$. A seÁ„o 5.3 do livro demonstra um algoritmo que soluciona este problema em $O(n\ log\ n)$.
+O problema de contagem da quantidade de invers√µes em uma lista define que uma invers√£o ocorre quando $i < j$, $a_{i} > a_{j}$. A se√ß√£o 5.3 do livro demonstra um algoritmo que soluciona este problema em $O(n\ log\ n)$.
 
-O exercÌcio pede que, dado uma lista de inteiros, se calcule a quantidade de inversıes significantes. Considere como invers„o significante, $i < j$, $a_{i} > 2a_{j}$.
+O exerc√≠cio pede que, dado uma lista de inteiros, se calcule a quantidade de invers√µes significantes. Considere como invers√£o significante, $i < j$, $a_{i} > 2a_{j}$.
 
-O algoritmo dever· manter a complexidade em $O(n\ log\ n)$
+O algoritmo dever√° manter a complexidade em $O(n\ log\ n)$
 
 
-Entrada:
+* Entrada:
 
-Elementos da lista, separados por espaÁos em branco.
+Elementos da lista, separados por espa√ßos em branco.
 
 #+BEGIN_EXAMPLE
 3 1 2
 #+END_EXAMPLE
 
-SaÌda:
+* Sa√≠da:
 
-O output dever· conter apenas a quantidade total de inversıes significantes.
+O output dever√° conter apenas a quantidade total de invers√µes significantes.
 
 
 #+BEGIN_EXAMPLE
