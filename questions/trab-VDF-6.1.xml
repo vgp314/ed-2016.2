@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<question id="VDF-Cap6-1" level="1" capitulo="6">
+  <text>
+
+    <p>Em programação dinâmica, o cálculo da distância mínima de
+    edição D entre uma string A de tamanho $t_a$ e uma string B de
+    tamanho $t_b$ se faz pelo cálculo das da distância de edição das
+    respectivas substrings da seguinte maneira:</p>
+    <ul>
+    <li>D(i,j) = mínimo entre: D(i-1,j) + 1; D(i-1,j-1) + dij;
+    D(i,j-1) + 1; sendo</li>
+    <li>D matriz de resultados</li>
+    <li>D(i,j) = Distância absoluta entre os i primeiros caracteres de
+    A e os j primeiros caracteres de B;</li>
+    <li>dij = distância relativa entre o i-ésimo cacater de A e o
+    j-ésimo caracter de B, sendo 0 se Ai = Bj, e 1 caso
+    contrário.</li>
+    </ul>
+    <p>É corretor afirmar sobre programação dinâmica e sobre o cálculo
+    da distância de edição:</p>
+  </text>
+
+  <choice type="correct">
+    <text>
+      Utiliza resultados armazenados de problemas parciais para o
+      cálculo do problema principal.
+    </text>
+    <explanation>
+      No exemplo, os resultados parciais para o cálculo de D(i,j) são
+      D(i-1,j), D(i-1,j-1) e D(i,j-1).
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      Divide o problema principal em problemas menores da mesma forma
+      que o <i>divide and conquer</i>.
+    </text>
+    <explanation>
+      Algoritmo <i>divide and conquer</i> divide sucessivamente um problema até que se consiga solução trivial.
+      Programação dinâmica parte da solução trivial D(1,1), que é memorizada como etapa do problema imediatamente mais complexo, e assim sucessivamente.
+    </explanation>
+  </choice>
+
+  <choice type="correct">
+    <text>
+      O cálculo da distância de edição entre A e B requer a solução de ta x tb subproblemas.
+    </text>
+    <explanation>
+      O cálculo de D(i,j) requer o cálculo de todas as distâncias entre todas as substrings de Ai e de Bi.
+      Como A e B possuem, respectivamente, ta e tb substrings, o cálculo de D(ta,tb) requer a solução de ta x tb problemas parciais.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      Existe um único caminho mínimo de edição. 
+    </text>
+    <explanation>
+      Pode haver mais de um mínimo local possível no cálculo da distância parcial, o que possibilita mais de uma sequência mínima de edições para transformação de uma string na outra.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      A distância de edição e as operações de transformação são as mesmas para transformar de A em B e para transformar B em A.
+    </text>
+    <explanation>
+      A distância de edição é a mesma, independentemente da transformação desejada.
+      De fato a permuta das strings (A por B e B por A) não altera o resultado.
+      Contudo, as operações de transformação são opostas: inserção torna-se remoção; substituição de Ai por Bj tornar-se Bj por Ai.
+    </explanation>
+  </choice>
+
+  <choice>
+    <text type="incorrect">
+      A operações de edição (insereção, remoção, substituição) depende apenas dos valores i e j, isto é, da posição na matriz D.
+    </text>
+    <explanation>
+      A operação de edição depende da seleção do mínimo [D(i-1,j) + 1 || D(i-1,j-1) + dij || D(i,j-1)], isto é, da posição relativa ao resultado parcial precedente.
+    </explanation>
+  </choice>
+
+  <choice type="incorrect">
+    <text>
+      A distância máxima de edição possível corresponde ao tamanho da string de destino.
+    </text>
+    <explanation>
+      A distância máxima de edição possível corresponde ao tamanho da maior string.
+    </explanation>
+  </choice>
+
+  <choice>
+    <text type="incorrect">
+      O subproblema D(i,j) representa apenas a comparação entre o i-ésimo caracter de A com o j-ésimo caracter de B, estabelecida em dij.
+    </text>
+    <explanation>
+      O subproblema D(i,j) carrega a comparação de todos os caracteres de A até a posição i com todos os caracteres de B até a posição J.
+    </explanation>
+  </choice>
+
+</question>

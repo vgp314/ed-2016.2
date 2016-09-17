@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<question id="BGM-q6" level="1" subject="">
+<question id="BGM-q6" level="2" chapter="6">
 
     <text>
-       <p>Programação dinâmica ou <i>Dynamic Programming</i> é um paradigma algoritmico em que um problema principal é resolvido através da identificação de um conjunto de subproblemas, que são resolvidos um a um. As respostas dos subproblemas menores são utilizadas para resolver os subproblemas maiores, até que o problema principal seja resolvido. Um exemplo de problema que podemos utilizar esse paradigma para resolver é o problema de distância de edição. Esse problema consiste em dadas 2 strings, e as operações de: edit, delete e insert, quantas são as operações mínimas para transformar uma string na outra.</p>
+       <p>Programação dinâmica ou <i>Dynamic Programming</i> é um paradigma algoritmico em que um problema principal é resolvido através da identificação de um conjunto de subproblemas, que são resolvidos um a um. As respostas dos subproblemas menores são utilizadas para resolver os subproblemas maiores, até que o problema principal seja resolvido. Um exemplo de problema que podemos utilizar esse paradigma para resolver é o problema de distância de edição. Esse problema consiste em dadas 2 strings, e as operações de: edit, delete e insert, identificar quantas são as operações mínimas para transformar uma string na outra.</p>
 <p> Dadas 2 strings: <i>abcdef</i> e <i>azced</i>, calcule a distância de edição utilizando um número mínimo de operações para responder qual é alterantiva abaixo é verdadeira. </p>
     </text>
 
     <explanation>
         <i>
-	
+	Clique no link a seguir para maiores detalhes sobre o problema <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">distância de edição ou Levenshtein Distance</a>.
+	Especificamente para o exemplo utilizado na questão, as operações mínimas são 3 e uma solução possível pode ser:  1-edição para trocar "b" por "z", 2-delete "d", 3-edição para trocar "f" por "d".
+
 	</i>
     </explanation>
 

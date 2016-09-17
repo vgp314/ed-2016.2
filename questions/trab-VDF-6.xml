@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="" level="0" subject="greedy">
+   <text>
+	<p>O Parque Ecológico Guloso oferece aos seus visitantes o aluguel de bicicletas para percorrer um circuito (que começa e termina no mesmo lugar) em torno da sua extensa reserva florestal. Para tal, é preciso apenas que os interessados marquem com antecedência, pela internet, o horário das suas visitas. Como medida adicional de controle, o Parque Guloso pede que os visitantes informem a sua idade, já que tem extensos dados estatísticos sobre a velocidade média desenvolvida por diferentes perfis de visitante.  </p>
+	<p>Os dados históricos mostram que os perfis típicos dos visitantes são os seguintes:</p>
+	
+	<table>
+	<tr><td>	idade	</td><td> velocidade média </td> </tr>
+	<tr><td>	20		</td><td>	80 km/h				</td></tr>
+	<tr><td>	30		</td><td>	60 km/h				</td></tr>
+	<tr><td>	40		</td><td>	50 km/h				</td></tr>
+	<tr><td>	50		</td><td>	40 km/h				</td></tr>
+	<tr><td>	60		</td><td>	30 km/h				</td></tr>
+	</table>
+	
+	<p>Os agendamentos para hoje são os seguintes:</p>
+
+	<table>
+	<tr><td>	horário	</td><td> idade			   </td> </tr>
+	<tr><td>	12:00		</td><td>	40				</td></tr>
+	<tr><td>	9:00		</td><td>	50				</td></tr>
+	<tr><td>	7:00		</td><td>	60				</td></tr>
+	<tr><td>	13:00		</td><td>	20				</td></tr>
+	<tr><td>	7:40		</td><td>	20				</td></tr>
+	<tr><td>	8:00		</td><td>	30				</td></tr>
+	<tr><td>	15:00		</td><td>	20				</td></tr>
+	</table>
+
+	<p>Queremos saber quantas bicicletas (no mínimo) o parque precisa disponibilizar de modo a evitar filas. Como obteremos esse número usando os conceitos do capítulo 5 (Papadimitriou)? A extensão do caminho é importante? Caso seja, assuma que são 60km.</p>
+	</text>
+   
+   
+   <explanation>Esta é uma versão de um dos algoritmos gulosos de intervalos vistos em aula</explanation>
+   <choice type="correct">
+		<text>
+		<p>De forma gulosa, ordenamos os agendamentos pelo tempo de início e adicionamos uma nova bicicleta no tempo de início seguinte. Verificamos que nos horários de maior movimento são usadas 3 bicicletas simultâneas. A extensão da pista importa, pois os horários de início são fixos, mas os horários de fim (que determinam a necessidade de adicionar bicicletas) variam com a extensão.</p>
+		</text>
+	</choice>
+   <choice type="incorrect">
+		<text>
+		<p>O algoritmo ingênuo que ordena as visitas por tempo de início produz um número de bicicletas necessário, mas não suficiente. Precisamos primeiro garantir que os visitantes que usam as bicicletas por menos tempo (os mais jovens) não precisem esperar pelo uso para um dado número de bicicletas. Assim, são necessárias 4 bicicletas. Por outro lado, como o que importa é a escala de eficiências, a extensão do passeio em quilômetros não importa.</p>
+		</text>
+   <choice type="incorrect">
+		<text>
+		<p>De forma gulosa, ordenamos os agendamentos pelo tempo previsto de liberação das bicicletas, condição necessária para evitar filas. Verificamos desse modo que no horário de maior demanda são necessárias 3 bicicletas. A extensão da pista importa, pois determina o horário de chegada.</p>
+		</text>
+   <choice type="incorrect">
+		<text>
+		<p>O resultado do algoritmo guloso neste caso não pode ser provado ótimo. Por programação dinâmica, conseguimos atribuir nomes (ou cores) às bicicletas e ordenar a sua disponibilidade de modo a atender ao público com apenas 3 bicicletas. A extensão da pista importa nesse caso, já que afeta o tempo de uso de uma dada bicicleta.</p>
+		</text>
+	</choice>
+   <choice type="incorrect">
+		<text>
+		<p>De forma gulosa, observamos que uma bicicleta não pode ser usada por duas pessoas ao mesmo tempo, e logo precisamos minimizar as interseções. Precisamos, portanto, de 6 bicicletas, que são todas liberadas até as 11; três dessas serão usadas no turno da tarde. O tempo de uso importa, em teoria, para este algoritmo, mas na prática existem horários sem uso de bicicleta que significam que pistas mais longas (até certo ponto) não afetam o resultado.</p>
+		</text>
+	</choice>
+</question>

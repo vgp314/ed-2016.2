@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question id="" level="0" subject="isabelle">
+   <text>
+   <p>Na análise de dados coletados mecanicamente, é comum que ocorram falhas de registro. Em alguns casos, as observações faltantes são marcadas com algum números absurdos no seu contexto (por exemplo, idades registradas como "-99"), ou então anotadas como "not a number" (NaN, também usado para erros de algoritmos numéricos como logaritmos de números negativos), para que mais tarde os algoritmos que consomem a informação façam a checagem. Gostaríamos, contudo, de modelar formalmente o fluxo dos dados. Para isso, começamos definindo um tipo:</p>
+   
+		<p><code> datatype 'a falivel = Falha | OK 'a </code></p>
+   
+   <p>que permite modelar para qualquer tipo de dados uma versão falível. Para modelar as operações com dados falíveis, definimos a função:</p>
+   
+		   <p><code> 
+		   primrec "fmap" :: "('a  ⇒ 'a ) ⇒ 'a falivel ⇒ 'a falivel" where
+				"fmap f Falha  = Falha" |
+				"fmap f (OK x) = OK (f x)"
+			</code></p>
+   
+   <p>Queremos, ainda, funções que modelem o caminho adotado por procedimentos de imputação por valores absurdos:</p>
+<ol>
+   <li> Uma função <code>imputar</code> que devolva os valores falíveis que estão <code>OK</code> e retorne um valor default para os valores de <code>Falha</code>.</li>
+		<li> Uma função <code>censurar</code> que tome valores marcados segundo algum critério (por exemplo, idades negativas) e retorne valores falíveis, avaliando para <code>Falha</code> quando apropriado.
+ </ol>  
+   
+   <p>Assinale a opção que tenha um tipo correto e um lema verdadeiro que possa ser provado no Isabelle com as técnicas vistas em aula (<code>induct_tac</code> e <code>auto</code>), mas sem lemas de simplificação auxiliares.</p>
+   </text>
+   
+   
+   <explanation>Esta questão deve ser possível sem recorrer ao Isabelle de primeira, mas implementar as funções citadas pode ajudar em um segundo momento a entender o problema e descobrir novas respostas. O objetivo didático é descobrir, através da modelagem formal do problema, que garantias podem ser obtidas sobre o comportamento do sistema real e quais fontes potenciais de erros devem ser tratadas com maior cuidado.</explanation>
+   <choice type="correct">
+		<text>
+			<ul>
+				<li>O tipo da função <code>censurar</code> é <code>"'a ⇒ ('a ⇒ bool) ⇒  'a falivel"</code>.</li> 
+				<li>Um lema verdadeiro é <code>"&forall; f x z. imputar z (fmap f (OK x)) = f x""</code>
+	  </text>
+      <explanation>
+			<ul>
+				<li>A função <code>censurar</code> recebe um (valor não infalível) e uma função de censura. O enunciado não pede um valor default porque não sabemos se o mesmo código de imputação foi usado em todos os casos. (Por exemplo, estatísticos podem ter usado "-99" e "-999" ao registrar dados faltantes.)</li>
+				<li>O lema diz que a imputação não afeta a matemática sobre os dados OK, o que é claramente desejado se se quer preservar a integridade dos procedimentos de cálculo com essas informações.
+				</explanation>
+   </choice>
+
+   <choice type="correct">
+		<text>
+			<ul>
+				<li>O tipo da função <code>imputar</code> é <code>"'a => 'a falivel => 'a"</code>.</li> 
+				<li>Um lema verdadeiro é <code>"&forall; z m. censurar (imputar (m) Falha) (&lambda; x. x=m) = Falha" </code>
+	  </text>
+      <explanation>
+			<ul>
+				<li>Ao contrário da função <code>censurar</code>, a função <code>imputar</code> recebe um valor default, não uma função -- já que não se tem uma função sobre <code>Falha</code> que faça sentido, a não ser uma constante.</li>
+				<li>O lema diz que os procedimentos de censura e imputação se anulam no caso da falha se conhecermos um valor certo de censura dado por <code>m</code> 
+				</explanation>
+   </choice>
+ 
+  <choice type="incorrect">
+		<text>
+			<ul>
+				<li>O tipo da função <code>imputar</code> é <code>"'a falivel => 'a => 'a"</code>.</li> 
+				<li>Um lema verdadeiro é <code>"&forall; z m. censurar (imputar (m) Falha) (&lambda; x. x=m) = Falha" </code>
+	  </text>
+      <explanation>
+			<p> O tipo da função, por si só, está certo (atende ao enunciado), mas o lema não segue. Um lema parecido que pode ser provado é:</p>
+			<p><code>"&forall; z m. censurar (imputar Falha (m)) (&lambda; x. x=m) = Falha"</code>
+			</explanation>
+   </choice>
+   
+   <choice type="incorrect">
+		<text>
+			<ul>
+				<li>O tipo da função <code>imputar</code> é <code>"'a => 'a falivel => 'a"</code>.</li> 
+				<li>Um lema verdadeiro é <code>"&forall; z m w. censurar (imputar (m) (OK w) (&lambda; x. x=m) = OK w" </code>
+	  </text>
+      <explanation>
+			<ul>
+				<li>Ao contrário da função <code>censurar</code>, a função <code>imputar</code> recebe um valor default, não uma função -- já que não se tem uma função sobre <code>Falha</code> que faça sentido, a não ser uma constante.</li>
+				<li>O lema é <strong>falso</strong>, bastando o contraexemplo <code>m=w</code> Isto mostra um problema com o procedimento de registro por imputação; se de fato houver um valor OK no número escolhido para representar a falha, o sistema quebra. (Ver, por exemplo, <a href="http://www.wired.com/2015/11/null/">a história do homem chamado Null</a>, que fica invisível para muitos sistemas de bancos de dados.) 
+			</ul>
+		</explanation>
+   </choice>
+   
+   <choice type="incorrect">
+		<text>
+			<ul>
+				<li>O tipo da função <code>censurar</code> é <code>"'a => 'a => 'a falível"</code>.</li> 
+				<li>Um lema verdadeiro é <code>"&forall; z m. censurar (imputar (m) Falha) (&lambda; x. x=m) = Falha" </code>
+	  </text>
+      <explanation>
+			<ul>
+				<li>O tipo da função <code>censurar</code> está correto. Conforme pedida no enunciado, <code>censurar</code> recebe uma função, não um valor de default. Como vários valores podem ter sido usados para registrar a Falha (por exemplo, -99 e -999 para uma idade), impor uma constante é muito restritivo. (Ademais, sempre se pode testar uma constante passando <code>(&lambda x. x)</code> como argumento.</li>
+				<li>O lema é correto, e diz que os procedimentos de censura e imputação se anulam no caso da falha se conhecermos um valor certo de censura dado por <code>m</code> 
+				</explanation>
+   </choice>
+   
+   
+   <choice type="incorrect">
+		<text>
+			<ul>
+				<li>O tipo da função <code>censurar</code> é <code>"'a => 'a => 'a falível"</code>.</li> 
+				<li>Um lema verdadeiro é <code>"&forall; x. x>0 =>  (imputar 0 (fmap f (OK x)) &ne; f 0))"" </code>
+	  </text>
+      <explanation>
+			<ul>
+				<li>O tipo da função <code>censurar</code> está correto. Conforme pedida no enunciado, <code>censurar</code> recebe uma função, não um valor de default. Como vários valores podem ter sido usados para registrar a Falha (por exemplo, -99 e -999 para uma idade), impor uma constante é muito restritivo. (Ademais, sempre se pode testar uma constante passando <code>(&lambda x. x)</code> como argumento.</li>
+				<li>O lema é <strong>falso</strong>: pode ocorrer que existe <code>x>0</code> e <code>(f x) = (f 0)</code>. O que se pretende obter aqui é alguma garantia de que a escolha de número a ser imputado não vá simular um resultado compatível com o de uma entrada válida, mas isto não é possível.</li>
+				</explanation>
+   </choice>
+ 
+   
+   
