@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <question level="2" chapter="5">
+<<<<<<< HEAD
     <text>
         <p>
             Um algoritmo guloso é uma técnica de resolução de problemas de
@@ -11,6 +12,16 @@
         </p>
 <pre><code>
 Mochila-Fracionária (p, v, n, c)
+=======
+	<text>
+		<p>
+			Um algoritmo guloso é uma técnica de resolução de problemas de otimização. 
+			Segue abaixo um exemplo de algoritmo que soluciona o problema da <a href="https://en.wikipedia.org/wiki/Continuous_knapsack_problem">
+			mochila fracionária</a>. Qual opção abaixo é correta?
+		</p>
+	</text>
+<pre><code>Mochila-Fracionária (p, v, n, c)
+>>>>>>> 5b56e670615f9e6f0aa2af175a7022e5e84b4474
    j ← n
    enquanto  j ≥ 1  e  pj ≤ c  faça
       xj ← 1
@@ -22,6 +33,7 @@ Mochila-Fracionária (p, v, n, c)
          xi ← 0
    devolva  x
 </code></pre>
+<<<<<<< HEAD
         <ul>
             <li>$n$ é o número de objetos</li>
             <li>cada objeto $i$ tem peso $pi$ e valor específico $vi$</li>
@@ -85,4 +97,53 @@ Mochila-Fracionária (p, v, n, c)
             em termos de valor específico possa sempre ser escolhido.
         </explanation>
     </choice>
+=======
+<i>
+  <ul>
+    <li>$n$ é o número de objetos</li>
+    <li>cada objeto $i$ tem peso $pi$ e valor específico $vi$</li>
+    <li>$c$ é a capacidade da mochila e deve ser respeitada</li>
+    <li>$xi$ é o número de objetos selecionados de indíce $i$</li>
+    <li>deseja-se preencher a mochila com o maior valor possível</li>
+    <li>supor que os objetos já se encontram ordenados de forma decrescente em relação a $vi$</li>
+  </ul>
+</i>
+	<choice type="incorrect">
+		<text>O algoritmo é eficiente pois realiza retornos (Backtrackings) para otimização </text>
+		<explanation>
+			O algoritmo itera segundo um critério sem realizar retornos (Backtracking), o que caracteriza um algoritmo guloso.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>O algoritmo realiza um número constante de operações.</text>
+		<explanation>
+			O número de operações realizadas não é constante, pois o número de iterações realizadas depende de $n$, 
+			em razão do laço $para$ contido no algoritmo.
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text> 
+            Esse algoritmo poderia ser utilizado caso os coeficientes $xi$ pudessem ser apenas inteiros.
+		</text>
+		<explanation>
+			Essa ténica não poderá ser utilzada, pois poderia ser necessário, seguindo essa lógica, 
+			realizar retornos (Backtracking) para garantir a otimização.     
+		</explanation>
+	</choice>
+	<choice type="incorrect">
+		<text>O algoritmo adiciona à mochila sempre o objeto de menor valor e isso garante a corretude na solução.</text>
+		<explanation>
+			O algoritmo adiciona sempre o objeto de menor valor específico. Isso que garante a corretude na solução do problema.
+		</explanation>
+	</choice>
+	<choice type="correct">
+		<text>
+			O fato dos coeficientes serem $xi$ serem reais permite que o algoritmo funcione corretamente.
+		</text>
+		<explanation>
+			Como os coeficientes são reais, pode-se escolher valores fracionários para os coeficientes. Isso garante que o melhor objeto em termos de valor
+            específico possa sempre ser escolhido.
+		</explanation>
+	</choice>
+>>>>>>> 5b56e670615f9e6f0aa2af175a7022e5e84b4474
 </question>
