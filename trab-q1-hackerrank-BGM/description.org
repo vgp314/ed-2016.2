@@ -1,0 +1,32 @@
+#+TITLE: Problem 1 - Chapter 2 
+#+AUTHOR: Bruno Fonseca, Gustavo Avila, Mateus Alvarenga
+#+EMAIL: brunomf@gmail.com, guavila@gmail.com, alvarenga.mateus@gmail.com
+
+
+* Contagem de inversões "significantes"
+
+/Baseado no Exercício 2 - Capítulo 5 do livro da Eva Tardos./
+
+O problema de contagem da quantidade de inversões em uma lista define que uma inversão ocorre quando $i < j$, $a_{i} > a_{j}$. A seção 5.3 do livro demonstra um algoritmo que soluciona este problema em $O(n\ log\ n)$.
+
+O exercício pede que, dado uma lista de inteiros, se calcule a quantidade de inversões significantes. Considere como inversão significante, $i < j$, $a_{i} > 2a_{j}$.
+
+O algoritmo deverá manter a complexidade em $O(n\ log\ n)$
+
+
+* Entrada:
+
+Elementos da lista separados por espaços em branco. Os elementos deverão pertencer a $\mathbb{N}^+$.
+
+#+BEGIN_EXAMPLE
+3 1 2
+#+END_EXAMPLE
+
+
+* Saída:
+
+O output deverá conter apenas a quantidade total de inversões significantes.
+
+#+BEGIN_EXAMPLE
+1
+#+END_EXAMPLE

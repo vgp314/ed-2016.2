@@ -1,0 +1,34 @@
+#+TITLE: Problem 3 - Chapter 6
+#+AUTHOR: Bruno Fonseca, Gustavo Avila, Mateus Alvarenga
+#+EMAIL: brunomf@gmail.com, guavila@gmail.com, alvarenga.mateus@gmail.com
+
+ 
+* Problema do troco
+
+Um problema muito comum em programação dinâmica é o de determinar a combinação linear mínima de moedas para uma quantia fixa, ou seja, qual o número mínimo de moedas necessárias para obter um determinado valor. Um exemplo desse problema é: suponha um conjunto de moedas nos valores $\{1,2,3\}$, o número mínimo de moedas para obter um $N = 5$ é de 2 moedas com valores $\{2,3\}$.
+
+Implemente um algoritmo eficiente que resolva esse problema, de acordo com o conjunto de moedas disponíveis e o valor que se deseja obter. Não será necessário especificar a quantidade de cada moeda, apenas a quantidade total de moedas independente de seu valor.
+
+
+* Entrada:
+
+A primeira linha contém lista de elementos inteiros positivos, que simbolizam o conjunto de moedas existentes (no exemplo abaixo, o caso do Brasil atualmente). Para simplificar, o algoritmo deverá considerar que há quantidade ilimitada de cada moeda.
+
+A segunda linha contém o valor que se deseja obter a menor quantidade de moedas. Também para simplificar, considere que todas as entradas poderão ser completadas com as moedas existentes (por exemplo, caso o conjunto de moedas for {2,3}, não se pedirá n=1, ou para conjunto {5,10}, não se pedirá n=6).
+
+#+BEGIN_EXAMPLE
+1 5 10 25 50 100
+74
+#+END_EXAMPLE
+
+
+* Saída:
+
+O algoritmo deverá retornar a quantidade mínima de moedas necessárias. No exemplo, para se obter 74 centavos, é necessário:
+
+1 moeda de 50 + 2 moedas de 20 + 4 moedas de 1 = 7 moedas ao todo
+
+#+BEGIN_EXAMPLE
+7
+#+END_EXAMPLE
+
