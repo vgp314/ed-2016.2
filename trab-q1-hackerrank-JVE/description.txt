@@ -1,0 +1,44 @@
+Este problema está disponível em:
+https://www.hackerrank.com/contests/fgv-ed2016
+---------------------------
+
+Uma teoria social famosa afirma que quaisquer duas pessoas no mundo estão separadas por no máximo 6 laços de amizade. O seu objetivo é validar essa teoria, dado um conjunto de dados de relações de amizade fornecido.
+
+Convencionamos que o grau de separação de uma pessoa com ela mesma é 0, o grau de separação entre duas pessoas amigas é 1, e assim por diante.
+
+---------------------------
+Input Format
+
+São apresentadas informações de amizade de N pessoas numeradas de 1 até N.
+
+A primeira linha do INPUT contém dois inteiros "N M ". Seguem-se M linhas contendo dois inteiros "I J", significando que as pessoas representadas pelos números I e J são amigas (note que a relação de amizade é simétrica).
+
+A última linha do INPUT apresenta dois inteiros "A B" representado as pessoas de quem se quer saber o grau de separação.
+
+---------------------------
+Constraints
+
+1 ≤ N ≤ 10000; 
+1 ≤ M ≤ 100 * N 
+1 ≤ I, J, A, B ≤ N;
+
+----------------------------
+Output Format
+
+O output deve ser um inteiro representando o grau de separaração entre as pessoas A e B.
+
+----------------------------
+Sample Input
+
+6 5  
+1 2  
+2 3  
+3 4  
+4 5  
+5 6  
+1 6
+
+Sample Output
+
+5
+
