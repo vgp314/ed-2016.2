@@ -1,5 +1,5 @@
 #+TITLE: Problem 3 - Chapter 6
-#+AUTHOR: Bruno Fonseca, Gustavo Avila, Matheus Alvarenga
+#+AUTHOR: Bruno Fonseca, Gustavo Avila, Mateus Alvarenga
 #+EMAIL: brunomf@gmail.com, guavila@gmail.com, alvarenga.mateus@gmail.com
 
  

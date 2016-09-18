@@ -1,5 +1,5 @@
 #+TITLE: Problem 1 - Chapter 2 
-#+AUTHOR: Bruno Fonseca, Gustavo Avila, Matheus Alvarenga
+#+AUTHOR: Bruno Fonseca, Gustavo Avila, Mateus Alvarenga
 #+EMAIL: brunomf@gmail.com, guavila@gmail.com, alvarenga.mateus@gmail.com
 
 
