@@ -1,0 +1,27 @@
+#+TITLE: Problem 2 - Chapter 6
+#+AUTHOR: Bruno Fonseca, Gustavo Avila, Mateus Alvarenga
+#+EMAIL: brunomf@gmail.com, guavila@gmail.com, alvarenga.mateus@gmail.com
+
+
+* Maior valor entre as somas das subsequências contíguas de lista
+
+
+Uma subsequência contígua de uma lista $S$ é uma subsequência que contém números consecutivos de $S$. Um problema envolvendo subsequências contíguas é o de achar a subsequência com a maior soma. Esse problema pode ser resolvido com programação dinâmica, existindo diversos algoritmos que realizam essa tarefa. Implemente um algoritmo com complexidade $O(n)$ que retorne o valor da maior soma de uma subsequência contígua de uma lista.
+
+
+* Entrada:
+
+Elementos da lista separados por espaços em branco. Os elementos deverão pertencer a $\mathbb{Z}$. Como simplificação, desconsiderar a possibilidade da lista ter somente elementos negativos (nesse caso o maior valor de soma será a subsequencia de um só elemento, sendo este elemento o maior valor da lista).
+
+#+BEGIN_EXAMPLE
+-2 1 -3 4 -1 2 1 -5 4
+#+END_EXAMPLE
+
+
+* Saída:
+
+Retornar o valor da maior soma de uma subsequência contígua da lista.
+
+#+BEGIN_EXAMPLE
+6
+#+END_EXAMPLE
