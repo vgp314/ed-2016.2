@@ -3,8 +3,9 @@
   <text>
     <p>
       O BFS é um agoritmo de busca em grafo. Utilizando esse
-      algoritmo, uma ordem possível de vértices visitados é: </p><br/>
-      <img src="images/trab-jve-4.gif"/><br/>
+      algoritmo, uma ordem possível de vértices visitados é:
+    </p>
+    <img src="images/trab-jve-4.gif"/>
   </text>
   <explanation>
     <p>
@@ -14,7 +15,9 @@
     </p>
 	</explanation>
 	<choice type="incorrect">
-		<text>M - N - O - P - Q - R</text>
+		<text>
+            $M - N - O - P - Q - R$
+        </text>
 		<explanation>
 			Essa sequência não corresponde a uma sequência
 			possível no BFS. Corresponde na verdade a uma
@@ -22,30 +25,41 @@
 		</explanation>
 	</choice>
 	<choice type="incorrect">
-		<text>$N - Q - M - P - O - R$</text>
+		<text>
+            $N - Q - M - P - O - R$
+        </text>
 		<explanation>
-			O nó $O$ deve ser visitado antes do nó $P$, pois ele está a uma distância menor em número de arestas do
-            primeiro de nó de visita.
+			O nó $O$ deve ser visitado antes do nó $P$, pois ele está a uma
+            distância menor em número de arestas do primeiro de nó de visita.
 		</explanation>
 	</choice>
 	<choice type="correct">
-		<text>$Q - M - N - P - R - O$</text>
+		<text>
+            $Q - M - N - P - R - O$
+        </text>
 		<explanation>
-			Essa sequência corresponde a uma sequência conforme o algoritmo de BFS.
+			Essa sequência corresponde a uma sequência conforme o algoritmo
+            de BFS.
 		</explanation>
 	</choice>
 	<choice type="incorrect">
-		<text>$Q - M - N - P - O - R$</text>
+		<text>
+            $Q - M - N - P - O - R$
+        </text>
 		<explanation>
-			O nó $O$ não deve ser visitado antes do nó $P$. No BFS antes todos os nós a uma distância $1$ devem ser visitados
-            antes do nós de distância $2$, em relação ao nó raiz da busca.
+			O nó $O$ não deve ser visitado antes do nó $P$. No BFS antes todos
+            os nós a uma distância $1$ devem ser visitados antes do nós de
+            distância $2$, em relação ao nó raiz da busca.
 		</explanation>
 	</choice>
 	<choice type="incorrect">
-		<text>$R - M - N - O - P - Q$</text>
+		<text>
+            $R - M - N - O - P - Q$
+        </text>
 		<explanation>
-			O nó $O$ não deve ser visitado antes do nó $Q$, em razão da sua distância menor em relação ao primeiro
-            nó de visita. Essa configuração corresponde a uma sequência DFS.
+			O nó $O$ não deve ser visitado antes do nó $Q$, em razão da sua
+            distância menor em relação ao primeiro nó de visita. Essa
+            configuração corresponde a uma sequência DFS.
 		</explanation>
 	</choice>
 </question>
